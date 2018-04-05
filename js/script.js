@@ -66,14 +66,14 @@ var processEntries = function () {
 var resetForm = function () {
     "use strict";
 	window.console.log("button clicked");
+	$("registration_form").reset();
     $("registration_info").innerHTML = "";
-    $("registration_form").innerHTML = "";
     $("registration_header").innerHTML = "";
     $("email_address").focus();
 };
 
 
-window.document.addEventListener("load", function () {
+window.addEventListener("load", function () {
     "use strict";
     $("register").addEventListener("click", processEntries);
     $("reset_form").addEventListener("click", resetForm);
